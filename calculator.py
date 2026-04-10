@@ -1,4 +1,8 @@
+#https://github.com/DeveloperX547/lab11-ASP
+# Partner 1: Abhiram Pothuri
 import math
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -6,6 +10,12 @@ calculator.py
 One function per operation, in order.
 """
 # First example
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 def add(a, b): 
     return a + b
 def subtract(a, b):
@@ -20,8 +30,6 @@ def logarithm(a, b):
 def exponent(a, b):
     return a ** b
 
-def sub(a, b):
-    return a - b
 def mul(a, b):
     return a * b
 def div(a, b):
